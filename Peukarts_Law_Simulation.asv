@@ -1,0 +1,30 @@
+function[] = Peukarts_Law_Simulation( )
+% This main funcion will load in data from a CSV file and will simulate 
+% Peukart's law. 
+
+
+    % Variables
+    %  k        Peukert's constant used in the equation
+    %  f        Peukert's function 
+    
+    % Initialize Peukert's Constant 
+    k = 1.248; 
+    coeff = 22263; 
+
+    % Create function
+    % Input: 
+    %       c The constant coefficient in front
+    %       k Peukert's constant
+    %       x The amps passed into the function
+    f = @(c, k, x) c*x.^k; 
+    
+    
+    % Create hypothetical discharge currents between 0 and 100
+    af = [0 : 0.01 : 10]
+    
+    
+    % Plot x = Amps and y = time
+    
+    
+    
+    
